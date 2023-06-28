@@ -1,0 +1,102 @@
+@use '../../scss/styles.scss' as *;
+
+$innergap: 5px;
+$card_padding: 0.5rem;
+$card_background: #fbfbfb;
+
+.work__container {
+  @extend .fluid-grid;
+  gap: $innergap;
+  padding: 5px;
+  min-height: 100vh;
+  background-color: #222222;
+  h2 {
+    margin: 0 0 0.5rem 0;
+  }
+}
+.work__header {
+  @extend .fluid-grid__header;
+  background-color: #222222;
+  color: #f1f1f1;
+}
+.work__main {
+  @extend .fluid-grid__main;
+  background-color: lightblue;
+}
+.work__main__picture {
+  @extend .responsive-image;
+}
+.work__card1 {
+  @extend .fluid-grid__card1;
+  border-radius: 5px;
+  padding: $card_padding;
+  background-color: $card_background;
+}
+.work__card2 {
+  @extend .fluid-grid__card2;
+  border-radius: 5px;
+  padding: $card_padding;
+  background-color: $card_background;
+}
+.work__card3 {
+  @extend .fluid-grid__card3;
+  border-radius: 5px;
+  padding: $card_padding;
+  background-color: $card_background;
+}
+.work__card4 {
+  @extend .fluid-grid__card4;
+  border-radius: 5px;
+  padding: $card_padding;
+  background-color: $card_background;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.work__card__header {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: left;
+}
+.work__card__image {
+  width: 100%;
+  height: 20px;
+}
+.work__card_title {
+  @include heading;
+  font-style: normal;
+}
+.work__card__paragraph {
+  @include paragraph;
+  font-family: calibri;
+}
+.work__navbar {
+  @extend .fluid-grid__navbar;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  display: flex;
+}
+.work__navbar__card {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+.work__navbar__gmail {
+  max-width: 60%;
+  height: auto;
+}
+.work__navbar__message {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.work__footer {
+  @extend .fluid-grid__footer;
+  background-color: #222222;
+  color: #f1f1f1;
+}
