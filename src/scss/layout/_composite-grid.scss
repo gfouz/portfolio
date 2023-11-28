@@ -1,23 +1,23 @@
-@use '../layout/flex' as *;
+@use "../layout/flex" as *;
 
 .composite-grid {
   display: grid;
   grid-template-areas:
-    'header'
-    'main'
-    'aside'
-    'details'
-    'footer';
+    "header"
+    "main"
+    "aside"
+    "details"
+    "footer";
   grid-template-columns: 1fr;
 
   @media (max-width: 1050px) and (min-width: 750px) {
     & {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        'header  header  header'
-        'main    main    aside'
-        'details details aside'
-        'footer  footer  footer';
+        "header  header  header"
+        "main    main    aside"
+        "details details aside"
+        "footer  footer  footer";
     }
   }
 
@@ -25,10 +25,10 @@
     & {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        'header  header  header'
-        'main    main    aside'
-        'main    main    details'
-        'footer  footer  footer';
+        "header  header  header"
+        "main    main    aside"
+        "main    main    details"
+        "footer  footer  footer";
     }
   }
 }

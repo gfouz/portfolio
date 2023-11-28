@@ -1,4 +1,4 @@
-//When using the mixin you need something like this : @include font-size(16px) , this will
+//When using the mixin you need something like this
 //compile into font-size: 1rem;
 
 @function calculate-rem($size) {

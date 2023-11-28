@@ -1,4 +1,4 @@
-@use '../abstracts/mixins.scss' as *;
+@use "../abstracts/mixins.scss" as *;
 
 .grid-section {
   display: grid;
@@ -16,17 +16,17 @@
   grid-template-columns: repeat(auto-fit, minmax($width + px, 1fr));
 }
 
-@mixin grid-two-columns($breakpoint: 768) {
+@mixin grid-cols-2($breakpoint: 768) {
   $width: calc($breakpoint / 2) + px;
   @extend .grid-section;
   grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
 }
-@mixin grid-three-columns($breakpoint: 768) {
+@mixin grid-cols-3($breakpoint: 768) {
   $width: calc($breakpoint / 3) + px;
   @extend .grid-section;
   grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
 }
-@mixin grid-four-columns($breakpoint: 768) {
+@mixin grid-cols-4($breakpoint: 768) {
   $width: calc($breakpoint / 4) + px;
   @extend .grid-section;
   grid-template-columns: repeat(auto-fit, minmax($width, 1fr));

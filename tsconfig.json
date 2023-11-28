@@ -33,9 +33,13 @@
       "scss/*": ["./src/scss/*"],
       "images/*": ["./public/*"],
       "fonts/*": ["./public/fonts/*"],
-      "scss-components/*": ["./src/scss/components/*"]
+      "scss-components/*": ["./src/scss/components/*"],
+      "schemas/*": ["./src/schemas/*"],
+      "utils/*": ["./src/utils/*"],
+      "lib/*": ["./src/lib/*"],
+      "actions/*": ["./src/app/(server-actions)/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".contentlayer/generated"],
   "exclude": ["node_modules"]
 }

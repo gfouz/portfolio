@@ -2,6 +2,11 @@
 
 @mixin heading($alignment: left) {
   text-align: $alignment;
+  font-weight: bolder;
+  font-size: clamp(1.4rem, 2vw, 5rem);
+}
+@mixin heading-italic($alignment: left) {
+  text-align: $alignment;
   font-style: italic;
   font-weight: bolder;
   font-size: clamp(1.4rem, 2vw, 5rem);

@@ -1,28 +1,28 @@
-@use '../layout/flex' as *;
+@use "../layout/flex" as *;
 
 .fluid-grid {
   display: grid;
   grid-template-areas:
-    'header'
-    'main'
-    'card1'
-    'card2'
-    'card3'
-    'card4'
-    'navbar'
-    'footer';
+    "header"
+    "main"
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "navbar"
+    "footer";
   grid-template-columns: 1fr;
 
   @media (min-width: 550px) {
     & {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
-        'header  header'
-        'main    main'
-        'card1    card2'
-        'card3    card4'
-        'navbar  navbar'
-        'footer  footer';
+        "header  header"
+        "main    main"
+        "card1    card2"
+        "card3    card4"
+        "navbar  navbar"
+        "footer  footer";
     }
   }
 
@@ -30,11 +30,11 @@
     & {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        'header  header  header'
-        'main    main    main'
-        'card1   card2  card3'
-        'navbar  navbar  card4'
-        'footer  footer  footer';
+        "header  header  header"
+        "main    main    main"
+        "card1   card2  card3"
+        "navbar  navbar  card4"
+        "footer  footer  footer";
     }
   }
 }

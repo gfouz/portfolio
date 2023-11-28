@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 export interface IRoutesProps {
   path: string;
@@ -12,12 +12,12 @@ export interface TitleProps {
 
 //Function to download a pdf file.
 export function fetchPdf() {
-  fetch('fouzsummary.pdf').then((response) => {
+  fetch("fouzsummary.pdf").then((response) => {
     response.blob().then((blob) => {
       const fileURL = window.URL.createObjectURL(blob);
-      let alink = document.createElement('a');
+      let alink = document.createElement("a");
       alink.href = fileURL;
-      alink.download = 'fouzsummary.pdf';
+      alink.download = "fouzsummary.pdf";
       alink.click();
     });
   });
@@ -39,15 +39,19 @@ export const reactVariant = {
 export const primaryPictureVariants = {
   visible: {
     transition: { duration: 5 },
-    x: '50px',
+    x: "50px",
   },
   hidden: {
     x: 0,
   },
 };
 export const variantsForText = {
-  visible: { transition: { duration: 5 }, opacity: 1 },
-  hidden: { opacity: 0 },
+  visible: { transition: { duration: 0.5 }, translateY: 0 },
+  hidden: { translateY: 20 },
+};
+export const spinning = {
+  visible: { transition: { duration: 0.5 }, scale: 1 },
+  hidden: { scale: 0 },
 };
 export const firstParagraphVariant = {
   visible: { transition: { duration: 3 }, opacity: 1 },
@@ -62,18 +66,20 @@ export const nodeJsLogoVariant = {
   hidden: { rotateX: -90 },
 };
 export const navbarVariant = {
-  visible: { transition: { duration: 1 }, width: '100%' },
+  visible: { transition: { duration: 1 }, width: "100%" },
   hidden: { width: 0 },
 };
 export const finalVariant = {
   visible: { transition: { duration: 0.4, delay: 0.5 }, opacity: 1 },
   hidden: { opacity: 0 },
 };
-export const about_react = `web developer focused on React Js and the most recently
-technologies related to this library such as NextJs, framer-motion, scss-modules,
-styled-components, chakra ui, zustand, valtio, react-router-dom,
-react-hook-form, react-query and NestJs for server side rendering besides Mongoose or Sequelize
-to abstract databases.`;
+export const blog_preface = `This blog is about latest web innovations. And this blog
+itself is built with Next.Js using the app directory 
+and server components, a new type of React components that 
+run on the server and return compiled JSX that is sent to 
+the client. Server Components are useful for rendering 
+the skeleton of a page, fetching data from the server in parallel, 
+and passing it to the "client components".`;
 
 export const about_express = `I am also focused on Express Js, and related libraries to afford
 security and functionality, besides very useful concepts to reuse

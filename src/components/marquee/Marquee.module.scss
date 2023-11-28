@@ -1,0 +1,22 @@
+.textOnMotion {
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 25s infinite linear;
+  padding-left: 100%; /*Initial offset, which places the text off-screen*/
+  color: #f1f1f1;
+  background-color: #17001a;
+}
+.textOnMotion img {
+  max-width: 100%;
+}
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.textOnMotion:hover {
+  animation-play-state: paused;
+}
