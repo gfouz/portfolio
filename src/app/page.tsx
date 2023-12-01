@@ -5,46 +5,58 @@ import { spinning } from "data/homepageData";
 import { variantsForText } from "data/homepageData";
 import MotionOnScroll from "components/motiononscroll/MotionOnScroll";
 import GradientText from "components/gradienttext/GradientText";
-import Menu from "components/menu/Menu";
+import HamburgerMenu from "components/menu/HamburgerMenu";
 import Toolbar from "components/toolbar/Toolbar";
 import Footer from "components/footer/FooterWithForm";
 import blog from "../../public/images/book-glasses.jpg";
 import computer from "../../public/images/computer.png";
 import black_gradient from "../../public/images/art_book.jpg";
-import fouz_link from "../../public/images/fouz-link.png";
+import fouz_link from "../../public/images/fouz-logo.png";
 import finances from "../../public/images/money.jpg";
-import hello from "../../public/images/home-main.jpg";
+import hello from "../../public/images/welcome.jpg";
 const timesRoman = localFont({ src: "../../public/fonts/times-roman.ttf" });
 import MarkdownToHtml from "components/markdowntohtml/MarkdownToHtml";
 //import NavbarNext from "components/navbar-next/Navbar";
 
 export default async function Home() {
   return (
-    <div>
+    <div className='bg-[#1F2937]'>
       <header>
-        <Menu />
+        <HamburgerMenu />
       </header>
       <main>
         <section className="">
           <Image alt="image" src={hello} className="max-w-[100%] h-auto" />
         </section>
-
-        <article className="md:flex">
-          <section className="flex flex-1 p-4 text-left items-center text-amber-50 gradient-bg">
+        <section className="flex flex-1 p-4 md:py-12 justify-center items-center text-amber-50">
             <MotionOnScroll variants={variantsForText}>
               <MarkdownToHtml
-                className="markdown-paragraph markdown-heading"
-                title="blog-introduction"
+                className="paragraph-w-600 markdown-heading text-left"
+                title="welcome-words"
               />
             </MotionOnScroll>
+
           </section>
-          <div className="flex-1">
+          <article className='py-12'>
+          <h2 >Projects and its Links:</h2>
+          </article>
+        <article className="md:flex">
+         
+          <div className="flex-1 overflow-hidden">
             <Image
-              className="object-fill w-[100%] h-[100%]"
+              className=" transition-all duration-500 object-fill w-[100%] h-[100%] hover:scale-[1.1] "
               src={blog}
               alt="blog-image"
             />
           </div>
+           <section className="flex flex-1 p-4 text-left items-center text-amber-50">
+            <MotionOnScroll variants={variantsForText}>
+              <MarkdownToHtml
+                className="markdown-paragraph markdown-heading "
+                title="blog-introduction"
+              />
+            </MotionOnScroll>
+          </section>
         </article>
         <div className="relative">
           <Image
@@ -54,9 +66,10 @@ export default async function Home() {
           />
           <div className="absolute top-0 left-0 w-[100%] h-[100%] flex justify-center items-center bg-[#00000099]">
             <MotionOnScroll variants={spinning}>
-              <a href="https://github.com/gfouz">
+              <a className='flex flex-col justify-center items-center' href="https://github.com/gfouz">
+               <h2 className='font-black text-[#E2CB5F]'>Follow me on Github.</h2>
                 <Image
-                  className="w-[150px] h-auto md:w-[300px]"
+                  className="w-[120px] h-auto"
                   src={fouz_link}
                   alt="technical-stack"
                 />
@@ -65,7 +78,7 @@ export default async function Home() {
           </div>
         </div>
         <article className="md:flex">
-          <section className="flex flex-1 p-4 text-left items-center text-amber-50 gradient-bg">
+          <section className="flex flex-1 p-4 text-left items-center text-amber-50">
             <MotionOnScroll variants={variantsForText}>
               <MarkdownToHtml
                 className="markdown-paragraph markdown-heading"
