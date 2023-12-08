@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
     <footer className="bg-gray-50" id="footer">
-      <div className="mx-auto grid max-w-screen-xl gap-y-8 gap-x-10 px-4 py-10 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
+      <div className="mx-auto grid max-w-screen-xl gap-x-10 gap-y-8 px-4 py-10 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
         <div className="max-w-sm">
           <div className="mb-6 flex h-12 items-center space-x-2">
             <span className="text-2xl font-bold">
-              <h2 className="text-xl font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
+              <h2 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-xl font-bold text-transparent">
                 Ecommerce Cart
               </h2>
             </span>
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <div className="mt-4 mb-2 font-medium xl:mb-4">Address</div>
+          <div className="mb-2 mt-4 font-medium xl:mb-4">Address</div>
           <div className="text-gray-500">
             Connaught Place, <br />
             45 Street, <br />
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <div className="mt-4 mb-2 font-medium xl:mb-4">Links</div>
+          <div className="mb-2 mt-4 font-medium xl:mb-4">Links</div>
           <nav aria-label="Footer Navigation" className="text-gray-500">
             <ul className="space-y-3">
               <li>
@@ -56,12 +56,12 @@ const Footer = () => {
           </nav>
         </div>
         <div className="px-2">
-          <div className="mt-4 mb-2 font-medium xl:mb-4">Drop a comment!</div>
+          <div className="mb-2 mt-4 font-medium xl:mb-4">Drop a comment!</div>
           <div className="flex flex-col">
             <div className="mb-4 object-contain">
               <input
                 type="email"
-                className="focus:outline mb-2 block h-14  rounded-xl bg-gray-200 px-4 sm:w-80 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                className="mb-2 block h-14 rounded-xl  bg-gray-200 px-4 focus:outline-none focus:outline focus:ring-1 focus:ring-blue-600 sm:w-80"
                 placeholder="Enter your email"
               />
               <button className="block rounded-xl bg-blue-600 px-6 py-3 font-medium text-white">

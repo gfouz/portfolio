@@ -1,6 +1,5 @@
-import ReactMarkdown from "react-markdown";
-import markdownParser from "lib/markdownParser";
-
+import ReactMarkdown from 'react-markdown';
+import markdownParser from 'lib/markdownParser';
 
 interface MarkdownToHtmlProps {
   title: string;
@@ -17,10 +16,8 @@ export default async function MarkdownToHtml({
   title,
   className,
 }: MarkdownToHtmlProps) {
-  
-      const markdowns = await markdownParser();
-      const data = markdowns.find( (item) => item.meta.title === title )
-  
+  const markdowns = await markdownParser();
+  const data = markdowns.find((item) => item.meta.title === title);
 
   return <ReactMarkdown className={className}>{data?.content}</ReactMarkdown>;
 }

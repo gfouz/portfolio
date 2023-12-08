@@ -4,7 +4,7 @@
 
 @layer utilities {
   .dark-bg {
-   backgrouna-color: #1F2937;
+    backgrouna-color: #1f2937;
   }
 
   .paragraph {
@@ -17,7 +17,7 @@
   .paragraph a {
     font-style: italic;
     font-weight: 500;
-    color: #A855F7;
+    color: #a855f7;
   }
   .paragraph-w-600 {
     max-width: 600px;
@@ -26,7 +26,7 @@
   .paragraph-w-600 a {
     font-style: italic;
     font-weight: 500;
-    color: #A855F7;
+    color: #a855f7;
   }
   .markdown-paragraph p {
     max-width: 600px;
@@ -35,10 +35,10 @@
   .markdown-paragraph a {
     font-style: italic;
     font-weight: 500;
-    color: #A855F7;
+    color: #a855f7;
   }
   .markdown-heading h2 {
-    color: #A855F7;
+    color: #a855f7;
     margin-block: 0.5rem;
     font-size: clamp(1.5rem, 2.2vw, 5rem);
   }
@@ -89,7 +89,6 @@
 }
 
 a {
-
   text-decoration: inherit;
 }
 a:hover {
@@ -111,6 +110,6 @@ body {
   min-height: 100vh;
 }
 
- h2 {
-    font-size: clamp(1.5rem, 2.2vw, 5rem);
-  }
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 5rem);
+}

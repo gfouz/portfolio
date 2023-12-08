@@ -1,18 +1,18 @@
-import { z } from "zod";
-import { User, UserList } from "@/schemas/user.schema";
+import { z } from 'zod';
+import { User, UserList } from '@/schemas/user.schema';
 
 export const RoleUsersSchema = z.object({
-  name: z.string().min(1, "Name is required"),
+  name: z.string().min(1, 'Name is required'),
   users: z.array(
     z.object({
       name: z.string(),
-      email: z.string().email("invalid email"),
+      email: z.string().email('invalid email'),
     }),
   ),
 });
 
 export const RoleSchema = z.object({
-  name: z.string().min(1, "A name is required"),
+  name: z.string().min(1, 'A name is required'),
 });
 
 export type Role = z.infer<typeof RoleSchema>;

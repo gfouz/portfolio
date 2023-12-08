@@ -1,4 +1,4 @@
-import s from "./Marquee.module.scss";
+import s from './Marquee.module.scss';
 
 interface MarqueeTypes {
   children: React.ReactNode;
@@ -9,4 +9,4 @@ const Marquee = ({ children }: MarqueeTypes) => {
 export default Marquee;
 
 export const customText =
-  " hello i am giovani and these are my skills: html + css + scss + typescript + reactjs + nextjs + prisma + express...";
+  ' hello i am giovani and these are my skills: html + css + scss + typescript + reactjs + nextjs + prisma + express...';

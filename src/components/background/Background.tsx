@@ -1,8 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
-import localFont from "next/font/local";
+'use client';
+import { motion } from 'framer-motion';
+import localFont from 'next/font/local';
 
-const customFont = localFont({ src: "../../../public/fonts/aureaultra.ttf" });
+const customFont = localFont({ src: '../../../public/fonts/aureaultra.ttf' });
 interface BackgroundProps {
   color1: string | undefined;
   color2: string | undefined;
@@ -14,7 +14,7 @@ export function Background({ color1, color2, color3 }: BackgroundProps) {
       <svg
         height="100%"
         width="100%"
-        style={{ position: "absolute", top: "0", left: "0" }}
+        style={{ position: 'absolute', top: '0', left: '0' }}
       >
         <defs>
           <linearGradient id="pattern">

@@ -1,8 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
-import localFont from "next/font/local";
+'use client';
+import { motion } from 'framer-motion';
+import localFont from 'next/font/local';
 
-const customFont = localFont({ src: "../../../public/fonts/artis.ttf" });
+const customFont = localFont({ src: '../../../public/fonts/artis.ttf' });
 
 interface GradientTextProps {
   children: React.ReactNode;

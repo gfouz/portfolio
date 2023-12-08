@@ -1,8 +1,8 @@
-import "./globals.css";
+import './globals.css';
 
 export const metadata = {
-  title: "Giovani Fouz Portfolio.",
-  description: "Giovani Fouz Portfolio of Github projects...",
+  title: 'Giovani Fouz Portfolio.',
+  description: 'Giovani Fouz Portfolio of Github projects...',
 };
 
 export default function RootLayout({

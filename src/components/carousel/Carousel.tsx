@@ -1,8 +1,8 @@
-"use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import useSetInterval from "hooks/useSetInterval";
-import s from "./Carousel.module.scss";
+'use client';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import useSetInterval from 'hooks/useSetInterval';
+import s from './Carousel.module.scss';
 
 interface CarouselProps {
   images: string[];
