@@ -66,7 +66,7 @@ export default async function Home() {
           <div className="absolute left-0 top-0 flex h-[100%] w-[100%] items-center justify-center ">
             <MotionOnScroll variants={spinning}>
               <a
-                className="flex h-[auto] w-[300px] flex-col items-center justify-center bg-[#120225] py-7 shadow-gray-100"
+                className="flex h-[auto] w-[300px] flex-col items-center justify-center bg-[#120225] py-7 rounded-lg"
                 href="https://github.com/gfouz"
               >
                 <h2 className="py-4 font-black text-[#E2CB5F]">
